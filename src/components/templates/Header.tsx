@@ -4,6 +4,8 @@ import HeaderInner from '../molecules/header/HeaderInner'
 
 const HeaderContainer  = styled.div`
     position:fixed;
+    width:100%;
+    height: 80px;
 `
 
 

@@ -1,16 +1,17 @@
 ﻿import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+import MenuIcon from '../design/MenuIcon'
 
 const MenuWrapper = styled(Link)`
     display:flex;
     align-items:center;
-`
-const MenuSvg = styled.svg``
-const MenuPath = styled.path`
+    text-decoration:none;
 `
 const MenuText = styled.h3`
-    font-size:20px;
+    font-size:16px;
+    letter-spacing:10px;
+    color: #333;
 `
 
 
@@ -18,10 +19,7 @@ const HeaderMenu = () => {
     return (
         <>
             <MenuWrapper to="/">
-                <MenuSvg>
-                    <MenuPath>
-                    </MenuPath>
-                </MenuSvg>
+                <MenuIcon />
                 <MenuText>MENU</MenuText>
             </MenuWrapper>
         </>

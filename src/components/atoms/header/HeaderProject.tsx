@@ -5,12 +5,12 @@ import styled from 'styled-components'
 const MenuWrapper = styled(Link)`
     display:flex;
     align-items:center;
-`
-const MenuSvg = styled.svg``
-const MenuPath = styled.path`
+    text-decoration:none;
 `
 const MenuText = styled.h3`
     font-size:16px;
+    letter-spacing:3px;
+    color:#333;
 `
 
 
@@ -18,10 +18,6 @@ const HeaderProject = () => {
     return (
         <>
             <MenuWrapper to="/">
-                <MenuSvg>
-                    <MenuPath>
-                    </MenuPath>
-                </MenuSvg>
                 <MenuText>VIEW PROJECTS</MenuText>
             </MenuWrapper>
         </>

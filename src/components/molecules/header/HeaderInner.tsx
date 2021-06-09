@@ -10,6 +10,7 @@ const HeaderInnerWrapper = styled.div`
     justify-content:space-between;
     align-items:center;
     width:95%;
+    height:100%;
     margin:0 auto;
 `
 
