@@ -1,38 +1,42 @@
 ﻿import React from 'react'
 import styled from "styled-components"
-import SideText from '../../atoms/main/SideText'
-import LeftText from '../../atoms/main/SideText'
+import AnimateLine from '../../atoms/main/left/AnimateLine'
+import Line from '../../atoms/main/left/Line'
+import SideBg from '../../atoms/main/left/SideBg'
+import SideText from '../../atoms/main/left/SideText'
 
 const Container = styled.div`
     position:fixed;
     top:50%;
-    left: -5%;
+    left: -4.5%;
     transform: rotate(90deg);
+
+`
+const TextWrapper = styled.div`
     cursor: pointer;
-`
-const LineWrapper = styled.div`
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
-`
-const Line = styled.div`
-    width:1px;
-    height:15px;
-    margin-top: 10px;
-    background-color: rgba(1,1,1, 0.8);
 `
 
 const MainLeft = () => {
-    const {isOpen, setOpen} = React.useState(false);
+    const [leftOpen, setLeftOpen] = React.useState(false);
+    const handleChange = () => {
+        setLeftOpen(!leftOpen);
+    }
     return (
         <>
-        <Container>
-            <SideText text="WHO WE ARE" isOpen={isOpen} />
-            <LineWrapper>
-            <Line />
-            </LineWrapper>
-        </Container>
+            <SideBg
+                leftOpen={leftOpen}
+            />
+            <AnimateLine leftOpen={leftOpen} top="0" bottom="0" />
+            <Container
+            >
+                <TextWrapper
+                    onMouseLeave={handleChange}
+                    onMouseEnter={handleChange}
+                >
+                    <SideText />
+                </TextWrapper>
+                <Line top="10px" bottom="0px" leftOpen={leftOpen} />
+            </Container>
         </>
     )
 }

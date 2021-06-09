@@ -1,26 +1,19 @@
 ﻿import React from 'react'
 import styled from "styled-components"
-import SideBg from '../../atoms/main/SideBg'
-import SideText from '../../atoms/main/SideText'
+import AnimateLine from '../../atoms/main/right/AnimateLine'
+import Line from '../../atoms/main/right/Line'
+import SideBg from '../../atoms/main/right/SideBg'
+import SideText from '../../atoms/main/right/SideText'
 
 const Container = styled.div`
     position:fixed;
     top:50%;
-    right: -5%;
+    right: -4.5%;
     transform: rotate(90deg);
+
+`
+const TextWrapper = styled.div`
     cursor: pointer;
-`
-const LineWrapper = styled.div`
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-    align-items:center;
-`
-const Line = styled.div`
-    width:1px;
-    height:15px;
-    margin-bottom: 10px;
-    background-color: rgba(1,1,1, 0.8);
 `
 
 const MainRight = () => {
@@ -30,17 +23,19 @@ const MainRight = () => {
     }
     return (
         <>
-            <SideBg 
+            <SideBg
                 isOpen={isOpen}
             />
+            <AnimateLine top="20px" bottom="0" isOpen={isOpen}/>
             <Container
-                onMouseEnter={RightChange}
-                onMouseLeave={RightChange}
             >
-                <LineWrapper>
-                    <Line />
-                </LineWrapper>
+                <Line top="0" bottom="10px" isOpen={isOpen} />
+                <TextWrapper
+                    onMouseLeave={RightChange}
+                    onMouseEnter={RightChange}
+                >
                 <SideText text="WHAT WE DO" isOpen={isOpen} />
+                </TextWrapper>
             </Container>
         </>
     )
