@@ -6,14 +6,16 @@ const HeaderContainer  = styled.div`
     position:fixed;
     width:100%;
     height: 80px;
+    z-index: 5;
+    color: #000;
 `
 
 
-const Header:VFC = () => {
+const Header:VFC = ({color}) => {
     return (
         <>
             <HeaderContainer>
-                <HeaderInner />
+                <HeaderInner  color={color}/>
             </HeaderContainer>
         </>
     )

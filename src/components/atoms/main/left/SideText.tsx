@@ -7,12 +7,19 @@ const Text = styled(motion.h3)`
     font-size: 14px;
     letter-spacing:5px;
 `
+const textV = {
+    closed: {color: "#333"},
+    open: {color: "#000"},
+}
 
-const SideText = () => {
+const SideText = ({leftOpen}) => {
     return (
         <>
                 <Wrapper>
-                    <Text>WHO WE ARE</Text>
+                    <Text
+                        variants={textV}
+                        animate={leftOpen ? "open" : "closed" }
+                    >WHO WE ARE</Text>
                 </Wrapper>
         </>
     )

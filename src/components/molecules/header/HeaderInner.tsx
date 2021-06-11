@@ -14,13 +14,13 @@ const HeaderInnerWrapper = styled.div`
     margin:0 auto;
 `
 
-const HeaderInner = () => {
+const HeaderInner = ({color}) => {
     return (
         <>
             <HeaderInnerWrapper>
-                <HeaderLogo />
-                <HeaderMenu />
-                <HeaderProject />
+                <HeaderLogo color={color} />
+                <HeaderMenu color={color} />
+                <HeaderProject color={color} />
             </HeaderInnerWrapper>
         </>
     )

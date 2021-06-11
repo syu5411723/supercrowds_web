@@ -5,13 +5,14 @@ import styled from 'styled-components'
 const Links = styled(Link)`
     text-decoration:none;
 `
-const Logo = styled.h2`
+
+
+const HeaderLogo = ({color}) => {
+    const Logo = styled.h2`
     font-size:22px;
-    color:#333;
+    color:${color};
     letter-spacing:2px;
 `
-
-const HeaderLogo = () => {
     return (
         <>
             <Links to="/">

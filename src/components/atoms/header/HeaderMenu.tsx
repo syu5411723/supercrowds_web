@@ -8,14 +8,15 @@ const MenuWrapper = styled(Link)`
     align-items:center;
     text-decoration:none;
 `
-const MenuText = styled.h3`
+
+
+
+const HeaderMenu = ({color}) => {
+    const MenuText = styled.h3`
     font-size:16px;
     letter-spacing:10px;
-    color: #333;
+    color: ${color};
 `
-
-
-const HeaderMenu = () => {
     return (
         <>
             <MenuWrapper to="/">

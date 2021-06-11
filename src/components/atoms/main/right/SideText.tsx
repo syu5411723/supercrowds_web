@@ -9,7 +9,7 @@ const Text = styled(motion.h3)`
 `
 
 const textV = {
-    closed: {color: "#333"},
+    closed: {color: "#000"},
     open: {color: "#fff"},
 }
 

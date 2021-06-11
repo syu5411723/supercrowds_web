@@ -1,13 +1,9 @@
 ﻿import React from 'react'
 
-
-
-
-const Main = () => {
+export const HomeMain = () => {
     return (
         <>
+            
         </>
     )
 }
-
-export default Main

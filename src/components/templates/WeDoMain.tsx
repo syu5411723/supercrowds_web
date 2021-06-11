@@ -1,13 +1,11 @@
 ﻿import React from 'react'
 
-
-
-
-const Main = () => {
+const WeDoMain = () => {
     return (
         <>
+            
         </>
     )
 }
 
-export default Main
+export default WeDoMain
