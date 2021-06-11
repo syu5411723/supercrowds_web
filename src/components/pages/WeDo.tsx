@@ -8,7 +8,7 @@ const WeDo = () => {
     return (
         <>
             <Header color="#fff" />
-            <PageBlack />
+            <PageBlack bg="#000" />
             <ChangeLink />
             <MainLeft />
         </>

@@ -33,7 +33,7 @@ const MainLeft = () => {
                 leftOpen={leftOpen}
             />
             <AnimateLine leftOpen={leftOpen} top="6px" bottom="0" />
-            <Links to="/we_do">
+            <Links to="/we_are">
                 <Container
                 >
                     <TextWrapper
