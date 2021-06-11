@@ -10,6 +10,7 @@ const LineWrapper = styled.div`
     position: fixed;
     top: 51%;
     right: 80px;
+    z-index: 2;
 `
 const lineV = {
     closed: {width: "0px"},

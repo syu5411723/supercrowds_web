@@ -9,7 +9,7 @@ import SideText from '../../atoms/main/right/SideText'
 const Container = styled.div`
     position:fixed;
     top:50%;
-    right: -4.5%;
+    right: -6%;
     transform: rotate(90deg);
     z-index: 2;
 

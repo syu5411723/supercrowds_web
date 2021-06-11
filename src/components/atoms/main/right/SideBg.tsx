@@ -7,10 +7,13 @@ const BgWrapper = styled(motion.div)`
     width:100%;
     height:100%;
     position:fixed;
+    top: 0;
+    left: 100%;
+    z-index: 1;
 ` 
 const wrapperV = {
-    closed: {x: "100%"},
-    open: {x: "70%", transition: {duration: 0.3,}},
+    closed: {x: "0%"},
+    open: {x: "-30%", transition: {duration: 0.3,}},
 }
 
 const SideBg = ({isOpen}) => {
