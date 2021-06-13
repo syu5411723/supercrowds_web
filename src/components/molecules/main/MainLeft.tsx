@@ -22,7 +22,7 @@ const TextWrapper = styled.div`
     cursor: pointer;
 `
 
-const MainLeft = () => {
+const MainLeft = ({color}) => {
     const [leftOpen, setLeftOpen] = React.useState(false);
     const handleChange = () => {
         setLeftOpen(!leftOpen);
@@ -40,7 +40,7 @@ const MainLeft = () => {
                         onMouseLeave={handleChange}
                         onMouseEnter={handleChange}
                     >
-                        <SideText  leftOpen={leftOpen}/>
+                        <SideText  leftOpen={leftOpen} color={color} />
                     </TextWrapper>
                     <Line top="10px" bottom="0px" leftOpen={leftOpen} />
                 </Container>

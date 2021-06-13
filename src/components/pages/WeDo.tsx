@@ -3,6 +3,7 @@ import MainLeft from '../molecules/main/MainLeft'
 import PageBlack from '../atoms/design/PageBlack'
 import Header from '../templates/Header'
 import ChangeLink from '../atoms/design/ChangeLink'
+import WeDoMain from '../templates/WeDoMain'
 
 const WeDo = () => {
     return (
@@ -10,7 +11,8 @@ const WeDo = () => {
             <Header color="#fff" />
             <PageBlack bg="#000" />
             <ChangeLink />
-            <MainLeft />
+            <MainLeft color="#fff" />
+            <WeDoMain />
         </>
     )
 }

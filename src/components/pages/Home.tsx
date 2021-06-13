@@ -14,7 +14,7 @@ const Home = () => {
         <>
             <Header color="#000" />
             <ChangeLink />
-            <MainLeft />
+            <MainLeft color="#333" />
             <MainRight />
         </>
     )
